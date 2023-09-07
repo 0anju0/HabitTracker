@@ -40,7 +40,7 @@ app.use(session({
     },
     store: MongoStore.create(
         {
-            mongoUrl:'mongodb+srv://himadrinayak:12345@cluster0.h7n86ah.mongodb.net/habit-tracker?retryWrites=true&w=majority',
+            mongoUrl:'mongodb+srv://anjubhakta2426:anju24bhakta@cluster0.jjipalp.mongodb.net/?retryWrites=true&w=majority',
             autoRemover : 'disabled'
         },
         function(err){
