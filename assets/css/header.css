@@ -1,3 +1,4 @@
+/* Default styles for all screen sizes */
 body {
     margin: 0;
 }
@@ -9,11 +10,13 @@ body {
     width: 100%;
     height: 70px;
 }
+
 .title {
     font-weight: 900;
     padding: 10px;
 }
-.title a{
+
+.title a {
     font-size: 40px;
     text-decoration: none;
     color: #fff;
@@ -24,47 +27,62 @@ body {
     display: flex;
     font-weight: 600;
 }
+
 .nameOfUser {
     font-size: 30px;
     color: rgb(233, 252, 255);
-    /* color: #fff; */
     padding: 10px;
     margin: 4px;
 }
-.logOut{    
+
+.logOut {
     font-size: 30px;
     margin: 6px;
     padding: 10px;
 }
-.logOut a{
+
+.logOut a {
     text-decoration: none;
     color: rgb(233, 252, 255);
 }
 
-.noUser ul{
+.noUser ul {
     display: flex;
     margin: 10px;
     justify-content: space-between;
 }
-.noUser li{
+
+.noUser li {
     list-style: none;
     font-size: 20px;
     padding: 10px;
     font-weight: 600;
 }
-.noUser li a{
+
+.noUser li a {
     text-decoration: none;
-    /* color: rgb(253, 234, 219); */
     color: rgb(233, 252, 255);
 }
 
-
-/* hover */
-.noUser li:hover {
-    text-decoration: underline 1px;
+/* Hover styles for links */
+.noUser li:hover,
+.logOut:hover {
+    text-decoration: underline;
     text-decoration-color: rgb(233, 252, 255);
 }
-/* .logOut :hover {
-    text-decoration: underline 1px;
-    text-decoration-color: rgb(233, 252, 255);
-} */
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    .title a {
+        font-size: 30px;
+    }
+
+    .nameOfUser,
+    .logOut {
+        font-size: 20px;
+    }
+
+    .noUser li {
+        font-size: 16px;
+    }
+}
