@@ -1,27 +1,29 @@
 body {
-    margin: 0;
-    background-image: url(../img/repair.jpg);
-    background-repeat: no-repeat;
-    background-size: 110vh 105vh;
+	margin: 0;
+	background-image: url(../img/repair.jpg);
+	background-repeat: no-repeat;
+	background-size: 110vh 105vh;
 }
 
 
-.changeP{
-    margin-left: 60%;
-    margin-right: 50px;
-    margin-top: 5%;
-    height: 480px;
-    background-color: rgb(202, 238, 186);
-    border-radius: 10%;
-    text-align: center;
-    padding: 2%;
+.changeP {
+	margin-left: 60%;
+	margin-right: 50px;
+	margin-top: 5%;
+	height: 480px;
+	background-color: rgb(202, 238, 186);
+	border-radius: 10%;
+	text-align: center;
+	padding: 2%;
 	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
+
 .form {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
-input{
+
+input {
 	width: 60%;
 	height: 20px;
 	/* background: #e0dede; */
@@ -33,7 +35,8 @@ input{
 	outline: none;
 	border-radius: 5px;
 }
-button{
+
+button {
 	width: 60%;
 	height: 40px;
 	margin: 10px auto;
@@ -52,6 +55,20 @@ button{
 
 button:hover,
 button:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em rgb(130, 189, 107);
-  transform: translateY(-0.25em);
+	box-shadow: 0 0.5em 0.5em -0.4em rgb(130, 189, 107);
+	transform: translateY(-0.25em);
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+	.changeP {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	input,
+	button {
+		width: 80%;
+		/* Adjust the width as needed */
+	}
 }
