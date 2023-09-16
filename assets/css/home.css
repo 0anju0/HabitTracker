@@ -1,20 +1,21 @@
 body {
-    background-image: url(../images/home.jpg);
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-size: 100vw 100vh;
-    background-attachment: fixed;
-    font-family: "JetBrains Mono",monospace;
+  background-image: url(../images/home.jpg);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  font-family: "JetBrains Mono", monospace;
 }
 
 
 /* ---------- styles on welcome page ---------- */
 .welcome-img {
-    width: 100%;
-    position: fixed;
-    z-index: -10;
-    height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -10;
+  height: 100%;
 }
+
 .welcome-title {
   color: rgb(151 35 16);
   font-size: 30px;
@@ -23,6 +24,7 @@ body {
   padding: 50px;
   font-family: serif;
 }
+
 .welcome-button {
   width: 200px;
   height: 50px;
@@ -34,9 +36,10 @@ body {
   margin-left: 40%;
   margin-top: 20px;
   cursor: pointer;
-  box-shadow: 0 0.5em 0.5em -0.4em  rgb(16, 133, 151);
+  box-shadow: 0 0.5em 0.5em -0.4em rgb(16, 133, 151);
   border-radius: 10px;
 }
+
 .welcome-button:hover,
 .welcome-button:focus {
   transform: translateY(-0.25em);
@@ -44,12 +47,13 @@ body {
 
 
 /* ---------- styles when there are no habits ---------- */
-#noHabitText{
-    color:  rgb(14 31 114);
-    text-align: center;
-    font-size: 30px;
-    margin-top: 40px;
+#noHabitText {
+  color: rgb(14 31 114);
+  text-align: center;
+  font-size: 30px;
+  margin-top: 40px;
 }
+
 /* Button used to open the form */
 #open-btn-fixed {
   background-color: rgb(16, 82, 151);
@@ -65,10 +69,12 @@ body {
   width: 250px;
   box-shadow: 0 0.5em 0.5em -0.4em rgb(16, 133, 151);
 }
+
 #open-btn-fixed:hover,
 #open-btn-fixed:focus {
   transform: translateY(-0.25em);
 }
+
 /* The popup form - hidden by default */
 .form-popup {
   display: none;
@@ -78,6 +84,7 @@ body {
   z-index: 9;
   text-align: center;
 }
+
 /* Add styles to the form container */
 .form-container {
   width: 700px;
@@ -85,6 +92,7 @@ body {
   padding: 10px;
   background-color: rgba(16, 133, 151, 0.7);
 }
+
 .form-container input {
   width: 90%;
   padding: 12px;
@@ -93,23 +101,27 @@ body {
   background: #f1f1f1;
   font-size: 15px;
 }
+
 .form-container input:focus {
   background-color: #fff;
   outline: none;
 }
+
 .form-container button {
   color: white;
   padding: 12px 20px;
   border: none;
   cursor: pointer;
   width: 50%;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   opacity: 0.9;
   font-size: 18px;
 }
+
 .form-container #save-btn {
   background-color: rgb(130, 189, 107);
 }
+
 .form-container #cancel-btn {
   background-color: rgb(241, 121, 109);
 }
@@ -121,20 +133,23 @@ body {
   left: 15%;
   position: absolute;
 }
+
 #change-view {
   margin-top: 30px;
   left: 75%;
   position: absolute;
 }
+
 .container {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-left: 200px;
 }
+
 .habit-container {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   background-color: rgba(255, 255, 255, 0.85);
   width: 70%;
   height: 90px;
@@ -142,43 +157,54 @@ body {
   padding: 5px;
   margin-top: 20px;
 }
+
 .habit-title {
   margin-top: 35px;
   width: 20%;
 }
-.day-container {  
+
+.day-container {
   margin-right: 5px;
 }
+
 .calender {
   display: flex;
 }
+
 .calender p {
   margin-right: 30px;
 }
+
 .mark-status {
   margin-left: 18px;
   font-size: 20px;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.281);
 }
+
 .menu {
   margin-top: 30px;
 }
+
 .menu i {
   margin-right: 10px;
   cursor: pointer;
 }
+
 .menu i:hover {
   transform: scale(1.15);
 }
+
 /* -- daily view -- */
 .daily-view .habit-container {
   justify-content: space-between;
 }
+
 .habit-desc {
   margin-left: 20px;
   font-size: 18px;
 }
+
 .mark-status-daily {
   color: rgba(0, 0, 0, 0.281);
   font-size: 28px;
@@ -193,12 +219,12 @@ body {
   background-color: #FCFCFD;
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   box-sizing: border-box;
   color: #36395A;
   cursor: pointer;
   display: inline-flex;
-  font-family: "JetBrains Mono",monospace;
+  font-family: "JetBrains Mono", monospace;
   height: 48px;
   justify-content: center;
   line-height: 1;
@@ -209,22 +235,120 @@ body {
   position: relative;
   text-align: left;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
+  transition: box-shadow .15s, transform .15s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  will-change: box-shadow,transform;
+  will-change: box-shadow, transform;
   font-size: 18px;
 }
+
 .button-30:focus {
   box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
 }
+
 .button-30:hover {
   box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
+
 .button-30:active {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
+}
+
+
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+
+  /* Put your responsive styles here */
+  /* For example, you can adjust font sizes, margins, and positioning */
+  .welcome-title {
+    font-size: 24px;
+    padding: 20px;
+  }
+
+  .welcome-button {
+    font-size: 16px;
+    margin-left: 30%;
+  }
+
+  .form-popup {
+    left: 5%;
+    /* Adjust the left position as needed */
+    top: 10%;
+    /* Adjust the top position as needed */
+  }
+
+  .form-container {
+    width: 90%;
+    /* Adjust the width as needed */
+    max-width: 400px;
+    /* Adjust the max-width as needed */
+    margin: 0 auto;
+    /* Center the container horizontally */
+  }
+
+  .form-container input {
+    width: 90%;
+    /* Use 100% width for responsiveness */
+  }
+
+  .form-container button {
+    width: 100%;
+    /* Use 100% width for responsiveness */
+  }
+
+  /* 
+  When habit added */
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .habit-container {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+
+  .habit-title {
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .calender p {
+    margin-right: 10px;
+  }
+
+  .mark-status {
+    margin-left: 0;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .menu {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .habit-desc {
+    margin-left: 0;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .mark-status-daily {
+    font-size: 20px;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /* Add more responsive styles as needed */
+
 }
